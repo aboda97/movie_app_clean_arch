@@ -19,7 +19,7 @@ class MovieRemoteDataSource implements BaseMovieRemoteDataSource {
       final response = await dio.get(
         ApiEndPoints.nowPlayingMoviePath,
       );
-
+      // print(response);
       if (response.statusCode == 200) {
         /*
         final List<dynamic> responseData = response.data['results'];
