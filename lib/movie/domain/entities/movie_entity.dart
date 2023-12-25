@@ -4,7 +4,7 @@ class MovieEntity extends Equatable {
   final String backdropPath;
   final List<int> genreIds;
   final int id;
-  final String originalTitle;
+  //final String originalTitle;
   final String overview;
   final String title;
   final double voteAverage;
@@ -14,7 +14,7 @@ class MovieEntity extends Equatable {
     required this.backdropPath,
     required this.genreIds,
     required this.id,
-    required this.originalTitle,
+    //required this.originalTitle,
     required this.overview,
     required this.title,
     required this.voteAverage,
@@ -26,7 +26,7 @@ class MovieEntity extends Equatable {
         backdropPath,
         genreIds,
         id,
-        originalTitle,
+        //originalTitle,
         overview,
         title,
         voteAverage,

@@ -1,11 +1,9 @@
-/*
-
 import 'package:movie_app/movie/domain/entities/movie_entity.dart';
 
 List<MovieEntity> moviesList = [
-  MovieEntity(
+  const MovieEntity(
     backdropPath: "/nmGWzTLMXy9x7mKd8NKPLmHtWGa.jpg",
-    genreIds: const [
+    genreIds: [
       14,
       28,
       12,
@@ -16,10 +14,11 @@ List<MovieEntity> moviesList = [
     releaseDate: "2022-05-04",
     title: "Movie Title",
     voteAverage: 5.0,
+    //originalTitle: '',
   ),
-  MovieEntity(
+  const MovieEntity(
     backdropPath: "/nmGWzTLMXy9x7mKd8NKPLmHtWGa.jpg",
-    genreIds: const [
+    genreIds: [
       14,
       28,
       12,
@@ -30,10 +29,11 @@ List<MovieEntity> moviesList = [
     releaseDate: "2022-05-04",
     title: "Movie Title",
     voteAverage: 5.0,
+    //originalTitle: '',
   ),
-  MovieEntity(
+  const MovieEntity(
     backdropPath: "/nmGWzTLMXy9x7mKd8NKPLmHtWGa.jpg",
-    genreIds: const [
+    genreIds: [
       14,
       28,
       12,
@@ -44,10 +44,11 @@ List<MovieEntity> moviesList = [
     releaseDate: "2022-05-04",
     title: "Movie Title",
     voteAverage: 5.0,
+    //originalTitle: '',
   ),
-  MovieEntity(
+  const MovieEntity(
     backdropPath: "/nmGWzTLMXy9x7mKd8NKPLmHtWGa.jpg",
-    genreIds: const [
+    genreIds: [
       14,
       28,
       12,
@@ -58,10 +59,11 @@ List<MovieEntity> moviesList = [
     releaseDate: "2022-05-04",
     title: "Movie Title",
     voteAverage: 5.0,
+    //originalTitle: '',
   ),
-  MovieEntity(
+  const MovieEntity(
     backdropPath: "/nmGWzTLMXy9x7mKd8NKPLmHtWGa.jpg",
-    genreIds: const [
+    genreIds: [
       14,
       28,
       12,
@@ -72,10 +74,11 @@ List<MovieEntity> moviesList = [
     releaseDate: "2022-05-04",
     title: "Movie Title",
     voteAverage: 5.0,
+    //originalTitle: '',
   ),
-  MovieEntity(
+  const MovieEntity(
     backdropPath: "/nmGWzTLMXy9x7mKd8NKPLmHtWGa.jpg",
-    genreIds: const [
+    genreIds: [
       14,
       28,
       12,
@@ -86,7 +89,6 @@ List<MovieEntity> moviesList = [
     releaseDate: "2022-05-04",
     title: "Movie Title",
     voteAverage: 5.0,
+    //originalTitle: '',
   ),
 ];
-
-*/
