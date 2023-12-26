@@ -26,6 +26,7 @@ class MovieRemoteDataSource implements BaseMovieRemoteDataSource {
         return responseData.map((json) => Movie.fromJson(json)).toList();
       */
         //Another Answer
+        print(response.data['results']);
         return List<MovieModel>.from(
           (response.data['results'] as List).map(
             (e) => MovieModel.fromJson(e),
@@ -45,7 +46,7 @@ class MovieRemoteDataSource implements BaseMovieRemoteDataSource {
   Future<List<MovieModel>> getPopularMovies() async {
     try {
       final response = await dio.get(
-        ApiEndPoints.kPopularMovie,
+        ApiEndPoints.popularMoviePath,
       );
 
       if (response.statusCode == 200) {
@@ -73,7 +74,7 @@ class MovieRemoteDataSource implements BaseMovieRemoteDataSource {
   Future<List<MovieModel>> getTopRatedMovies() async {
     try {
       final response = await dio.get(
-        ApiEndPoints.kTopRatedMovie,
+        ApiEndPoints.topRatedMoviePath,
       );
 
       if (response.statusCode == 200) {

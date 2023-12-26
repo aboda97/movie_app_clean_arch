@@ -7,7 +7,7 @@ class GetPopularUseCase {
   final BaseMovieRepo baseRepo;
   GetPopularUseCase(this.baseRepo);
 
-  Future<Either<Failure, List<MovieEntity>>> getPopularExcute() async {
+  Future<Either<Failure, List<MovieEntity>>> popularExcute() async {
     return await baseRepo.getPopularMovie();
   }
 }

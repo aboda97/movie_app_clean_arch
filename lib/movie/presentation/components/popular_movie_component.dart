@@ -3,18 +3,18 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:movie_app/core/network/api_endpoints.dart';
-import 'package:movie_app/movie/presentation/manager/top_rated_movie_bloc/top_rated_movie_bloc.dart';
-import 'package:movie_app/movie/presentation/manager/top_rated_movie_bloc/top_rated_movie_states.dart';
+import 'package:movie_app/movie/presentation/manager/popular_movie_bloc/popular_movie_bloc.dart';
+import 'package:movie_app/movie/presentation/manager/popular_movie_bloc/popular_movie_states.dart';
 import 'package:shimmer/shimmer.dart';
 
-class TopRatedMovieComponent extends StatelessWidget {
-  const TopRatedMovieComponent({super.key});
+class PopularMovieComponent extends StatelessWidget {
+  const PopularMovieComponent({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<TopRatedMovieBloc, TopRatedMovieState>(
+    return BlocBuilder<PopularMovieBloc, PopularMovieState>(
       builder: (BuildContext context, state) {
-        if (state is TopRatedStateSuccess) {
+        if (state is PopularStateSuccess) {
           return FadeIn(
             duration: const Duration(milliseconds: 500),
             child: SizedBox(
@@ -63,7 +63,7 @@ class TopRatedMovieComponent extends StatelessWidget {
               ),
             ),
           );
-        } else if (state is TopRatedStateFailure) {
+        } else if (state is PopularStateFailure) {
           return SizedBox(
             height: 170.0,
             child: Center(

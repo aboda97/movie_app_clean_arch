@@ -7,7 +7,7 @@ class GetTopRatedUseCase {
   final BaseMovieRepo baseRepo;
   GetTopRatedUseCase(this.baseRepo);
 
-  Future<Either<Failure, List<MovieEntity>>> getTopRatedExcute() async {
+  Future<Either<Failure, List<MovieEntity>>> topRatedExcute() async {
     return await baseRepo.getTopRatedMovie();
   }
 }
