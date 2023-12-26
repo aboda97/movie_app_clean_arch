@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app/core/services/service_locator.dart';
-import 'package:movie_app/movie/presentation/screens/movie_home_screen.dart';
+import 'package:movie_app/features/movie/presentation/screens/movie_home_screen.dart';
 
 void main() {
   ServiceLocator().setup();

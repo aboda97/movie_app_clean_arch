@@ -1,4 +1,4 @@
-import 'package:movie_app/movie/domain/entities/movie_entity.dart';
+import 'package:movie_app/features/movie/domain/entities/movie_entity.dart';
 
 List<MovieEntity> moviesList = [
   const MovieEntity(
