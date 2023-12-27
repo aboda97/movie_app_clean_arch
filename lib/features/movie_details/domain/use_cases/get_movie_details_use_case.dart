@@ -17,7 +17,7 @@ class GetMovieDetailsUseCase
   }
 }
 
-////----->  if you need to add more than Parameter
+////----->  make this class if you need to add more than Parameter
 class MovieDetailsParams extends Equatable {
   final int movieDetailsId;
 
