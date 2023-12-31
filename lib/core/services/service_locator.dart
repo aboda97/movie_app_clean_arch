@@ -12,7 +12,9 @@ import 'package:movie_app/features/movie_details/data/data_source/remote_data_so
 import 'package:movie_app/features/movie_details/data/repository/movie_details_repo.dart';
 import 'package:movie_app/features/movie_details/domain/base_repository/base_movie_details_repo.dart';
 import 'package:movie_app/features/movie_details/domain/use_cases/get_movie_details_use_case.dart';
-import 'package:movie_app/features/movie_details/presentation/manager/bloc/movie_details_bloc.dart';
+import 'package:movie_app/features/movie_details/domain/use_cases/get_recommendation_movie_use_case.dart';
+import 'package:movie_app/features/movie_details/presentation/manager/movie_details_bloc/movie_details_bloc.dart';
+import 'package:movie_app/features/movie_details/presentation/manager/recommendation_movie_bloc/recommendation_movie_bloc.dart';
 
 final sl = GetIt.instance;
 
@@ -59,6 +61,11 @@ class ServiceLocator {
         sl(),
       ),
     );
+    sl.registerLazySingleton<GetRecommendationMovieUseCase>(
+      () => GetRecommendationMovieUseCase(
+        baseMovieDetailsRepo: sl(),
+      ),
+    );
 
     //// BLOC
     sl.registerFactory<NowPlayingMovieBloc>(
@@ -79,6 +86,11 @@ class ServiceLocator {
     );
     sl.registerFactory<MovieDetailsBloc>(
       () => MovieDetailsBloc(
+        sl(),
+      ),
+    );
+    sl.registerFactory<RecommendationMovieBloc>(
+      () => RecommendationMovieBloc(
         sl(),
       ),
     );

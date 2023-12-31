@@ -7,6 +7,7 @@ class ApiEndPoints {
   static const kBaseImageMovieUrl = 'https://image.tmdb.org/t/p/w500';
   static const kMovieDetailsId = 695721;
   static const kMovieDetails = 'movie';
+  static const kMovieRecommendation = 'recommendations';
 
   //---  PATHS    ---//
   static const nowPlayingMoviePath =
@@ -15,5 +16,7 @@ class ApiEndPoints {
   static const topRatedMoviePath = '$baseUrl/$kTopRatedMovie?api_key=$apiKey';
   static const movieDetailsPath =
       '$baseUrl/$kMovieDetails/$kMovieDetailsId?api_key=$apiKey';
+  static const movieRecommendationPath =
+      '$baseUrl/$kMovieRecommendation/$kMovieDetailsId?api_key=$apiKey';
   static String imageMovieUrl(String path) => '$kBaseImageMovieUrl$path';
 }
