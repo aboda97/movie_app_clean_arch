@@ -1,9 +1,11 @@
 
 /*
-MovieDetail movieDetailDummy = const MovieDetail(
+import 'package:movie_app/features/movie_details/data/models/movie_details_model.dart';
+
+MovieDetailsModel movieDetailDummy = const MovieDetailsModel(
   backdropPath: "/nmGWzTLMXy9x7mKd8NKPLmHtWGa.jpg",
   genres: [
-    Genres(name: 'Family', id: 10751),
+    GenresModel(name: 'Family', id: 10751),
   ],
   id: 438148,
   overview:
